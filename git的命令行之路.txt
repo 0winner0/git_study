@@ -32,3 +32,45 @@
 	git status
 
 
+#已提交文件到暂存区，又在工作区进行了修改，会出现以下情况：
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LICENSE
+
+	# 使用 git checkout -- <file> 用暂存区的文件覆盖工作区的文件
+
+#已提交到暂存区，又想会退到工作区
+	git reset HEAD <file>
+
+#查看历史提交
+	git log
+
+	commit add62b0dfdf2ba1b73ad6052e7c2711693fccfe6		-->	sha1
+	Author: 0winner0 <3350608096@qq.com>
+	Date:   Mon Feb 26 21:45:37 2018 +0800
+
+	    github网站搭建
+
+	commit ae9f543f6072ae06d6a3337862b5e65160d69e09
+	Author: Dajin <3350608096@qq.com>
+	Date:   Mon Feb 26 21:41:22 2018 +0800
+
+	    Update README.md
+
+	commit 8bb7e47b6b462dd246a941fcb574f21e956e91f5
+	Author: Dajin <3350608096@qq.com>
+	Date:   Mon Feb 26 21:29:49 2018 +0800
+
+	    修改文件
+
+	    修改文件
+
+	commit 4ebbe85c9a42f2a843df39b3d2462d99bc658a6f
+	Author: Dajin <3350608096@qq.com>
+	Date:   Mon Feb 26 21:21:18 2018 +0800
+
+	    Set theme jekyll-theme-midnight
+
+#reset和checkout
