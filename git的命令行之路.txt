@@ -1,0 +1,34 @@
+#git的安装 https://git-scm.com/downloads
+
+#初次使用git的相关配置
+	git config --global user.anem "用户名"
+	git config --global user.email "邮箱"
+	git config --list 查看配置列表
+
+
+“Git的设置让使用者觉得自己比想象中的笨”
+				-- Andrew Morton
+不要高估自己的智商，不要低估Git的能耐！
+
+#Git记录的是什么？
+	svn记录的是每一次版本变动的内容
+
+#工作区、暂存区（index）、git仓库（HEAD）
+	工作区：
+	暂存区：保存每一次的改动，一个文件列表
+	git仓库：最终存放的版本，HEAD只想的最新版本
+
+#Git的工作流程
+	1）在工作目录添加、修改文件
+	2）将需要进行版本管理的文件放入暂存区 --> git add 文件名
+	3）将暂存区的文件提交的Git仓库 --> git commit -m "提交信息"
+
+#Git管理文件的三种状态
+	已修改（modified）
+	已暂存（staged）
+	已提交（committed）
+
+#查看状态
+	git status
+
+
